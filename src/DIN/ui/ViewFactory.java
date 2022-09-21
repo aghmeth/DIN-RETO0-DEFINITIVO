@@ -3,4 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication4;
+package DIN.ui;
+
+/**
+ *
+ * @author Ale
+ */
+public class ViewFactory {
+    
+}

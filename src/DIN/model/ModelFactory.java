@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DIN.ui;
+package DIN.model;
 
 /**
  *
  * @author Ale
  */
-public class mostrarTexto {
+public class ModelFactory {
     
 }
