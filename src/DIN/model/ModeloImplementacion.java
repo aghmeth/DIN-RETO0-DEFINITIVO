@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package DIN.model;
-
+import DIN.model.ModelFactory;
 /**
  *
  * @author Ale
