@@ -9,18 +9,16 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author 2dam
+ * @author Diego
+ * En ModeloImplementacionFich imprimimos el mensaje por terminal, recogido desde el archivo de propiedades
  */
 public class ModeloImplementacionFich implements Modelo {
 
     @Override
-    public String getGreeeting() {
+    public String getGreeting() {
         String mensaje;
-        ResourceBundle file_type;
-        file_type = ResourceBundle.getBundle("Utilidades.PropiedadSaludo");
-        mensaje = file_type.getString("file_type");
-        
+        mensaje = ResourceBundle.getBundle("Utilidades.PropiedadSaludo").getString("saludo");   
+        System.out.println(mensaje);
         return mensaje;
     }
-    
 }

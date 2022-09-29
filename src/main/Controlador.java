@@ -9,11 +9,12 @@ import DIN.model.Modelo;
 /**
  *
  * @author Ale
+ * Llamamos a los métodos para obtener y mostrar el saludo
  */
 public class Controlador {
     public void ejecutar(Modelo modelo, Vista vista){
         String integrade;
-        integrade = modelo.getGreeeting();
-        vista.showGreeting();
+        integrade = modelo.getGreeting();
+        vista.showGreeting(integrade);
     }
 }

@@ -11,7 +11,8 @@ import DIN.ui.ViewFactory;
 import main.Controlador;
 /**
  *
- * @author Ale
+ * @author Diego
+ * Desde Aplicacion llamamos a los métodos getModel y getVista y construimos el controlador
  */
 public class Aplicacion { 
     
@@ -25,5 +26,6 @@ public class Aplicacion {
         ViewFactory vistafact = new ViewFactory();
         
         controller.ejecutar(modelfact.getModel(), vistafact.getvista());   
+       
     }
 }

@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DIN.ui;
 
+package DIN.ui;
 /**
  *
- * @author Ale
- * Desde la VistaImplementacionFich, mostramos por la ventana el mensaje sacado del archivo de propiedades
+ * @author 2dam
+ * Desde aquí, llamamos al saludo que se encuentra en la base de datos para mostrarlo en la ventana
  */
-public class VistaImplementacionFich extends javax.swing.JFrame implements Vista {
+public class VistaImplementacionVentana extends javax.swing.JFrame implements Vista {
     /**
-     *Creamos y hacemos la ventana visible
+     * Creamos y hacemos la ventana visible
      */
-    public VistaImplementacionFich() {
+    public VistaImplementacionVentana() {
         initComponents();
         this.setVisible(true);
     }
@@ -66,22 +66,17 @@ public class VistaImplementacionFich extends javax.swing.JFrame implements Vista
         );
 
         pack();
-    }// </editor-fold>                        
-
-    @Override
-    /**
- * Mostramos el mensaje
- */
-    public void showGreeting(String mensaje){
-        LabelFile.setText(mensaje);
-    }
+    }                     
 
     // Variables declaration - do not modify                     
     private javax.swing.JLabel LabelBD;
     private javax.swing.JLabel LabelFile;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    // End of variables declaration                     
+    // End of variables declaration                    
 
-    
+    @Override
+    public void showGreeting(String mensaje) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

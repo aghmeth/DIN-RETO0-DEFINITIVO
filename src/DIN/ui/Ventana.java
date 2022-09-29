@@ -10,11 +10,12 @@ import javax.swing.JLabel;
 /**
  *
  * @author Ale
+ * Esta es la ventana por la que saldrá el saludo
  */
 public class Ventana extends javax.swing.JFrame implements Vista{
 
     /**
-     * Creates new form Ventana
+     * Creamos y hacemos visible la 
      */
     public Ventana() {
         initComponents();
@@ -96,9 +97,7 @@ public class Ventana extends javax.swing.JFrame implements Vista{
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        
+        //</editor-fold>        
     }
     public void showGreeting(String mensaje){
         jLabel1.setText(mensaje);
@@ -111,7 +110,6 @@ public class Ventana extends javax.swing.JFrame implements Vista{
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 
-    @Override
     public String showGreeting() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
