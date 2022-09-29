@@ -7,8 +7,13 @@ package DIN.ui;
 
 /**
  *
- * @author Ale
+ * @author 2dam
  */
-public class VistaImplementacion {
+public class VistaImplementacionBD implements Vista {
+
+    @Override
+    public String showGreeting() {
+        return null;
+    }
     
 }

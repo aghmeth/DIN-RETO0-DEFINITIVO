@@ -4,11 +4,16 @@
  * and open the template in the editor.
  */
 package main;
-
+import DIN.ui.Vista;
+import DIN.model.Modelo;
 /**
  *
  * @author Ale
  */
 public class Controlador {
-    
+    public void ejecutar(Modelo modelo, Vista vista){
+        String integrade;
+        integrade = modelo.getGreeeting();
+        vista.showGreeting();
+    }
 }

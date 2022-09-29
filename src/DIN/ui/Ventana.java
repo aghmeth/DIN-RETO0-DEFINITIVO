@@ -5,17 +5,20 @@
  */
 package DIN.ui;
 
+import javax.swing.JLabel;
+
 /**
  *
  * @author Ale
  */
-public class Ventana extends javax.swing.JFrame {
+public class Ventana extends javax.swing.JFrame implements Vista{
 
     /**
      * Creates new form Ventana
      */
     public Ventana() {
         initComponents();
+        this.setVisible(true);
     }
 
     /**
@@ -76,6 +79,7 @@ public class Ventana extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+        Ventana ventana = new Ventana();
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -94,12 +98,10 @@ public class Ventana extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Ventana().setVisible(true);
-            }
-        });
+        
+    }
+    public void showGreeting(String mensaje){
+        jLabel1.setText(mensaje);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -108,4 +110,13 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public String showGreeting() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
+
+    
 }

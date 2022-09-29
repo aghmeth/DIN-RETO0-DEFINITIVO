@@ -4,11 +4,16 @@
  * and open the template in the editor.
  */
 package DIN.model;
-import DIN.model.ModelFactory;
+
 /**
  *
- * @author Ale
+ * @author 2dam
  */
-public class ModeloImplementacion {
+public class ModeloImplementacionBD implements Modelo {
+
+    @Override
+    public String getGreeeting() {
+        return null;
+    }
     
 }
