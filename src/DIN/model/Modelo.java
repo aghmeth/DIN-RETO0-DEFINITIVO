@@ -10,5 +10,5 @@ package DIN.model;
  * @author Ale
  */
 public interface Modelo {
-    
+    public String getGreeeting();
 }

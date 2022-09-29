@@ -10,5 +10,5 @@ package DIN.ui;
  * @author Ale
  */
 public interface Vista {
-    
+    public String showGreeting();
 }

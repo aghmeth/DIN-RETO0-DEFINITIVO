@@ -4,11 +4,22 @@
  * and open the template in the editor.
  */
 package main;
-
+import DIN.model.ModelFactory;
+import DIN.model.Modelo;
+import DIN.ui.Ventana;
+import DIN.ui.ViewFactory;
+import main.Controlador;
 /**
  *
  * @author Ale
  */
 public class Aplicacion {
-    
+    public static void main(String [] args){
+        Controlador controller = new Controlador();
+        ModelFactory modelfact = new ModelFactory();
+        ViewFactory vistafact = new ViewFactory();
+        
+        controller.ejecutar(modelfact.getModel(), vistafact.getvista());
+        
+    }
 }

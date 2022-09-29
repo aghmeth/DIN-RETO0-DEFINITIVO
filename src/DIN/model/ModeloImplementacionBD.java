@@ -5,15 +5,15 @@
  */
 package DIN.model;
 
-import java.io.File;
-import java.io.Serializable;
-
 /**
  *
- * @author Ale
+ * @author 2dam
  */
-public class hacerTexto implements Serializable{
-    File fich = new File("ficheroSaludo.txt");
-    
+public class ModeloImplementacionBD implements Modelo {
+
+    @Override
+    public String getGreeeting() {
+        return null;
+    }
     
 }
