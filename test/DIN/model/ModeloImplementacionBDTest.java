@@ -48,7 +48,7 @@ public class ModeloImplementacionBDTest {
     public void testGetGreeting() {
         System.out.println("getGreeting");
         ModeloImplementacionBD instance = new ModeloImplementacionBD();
-        String expResult = "hola desde la BD";
+        String expResult = "QUE TAL GENTE";
         String result = instance.getGreeting();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
