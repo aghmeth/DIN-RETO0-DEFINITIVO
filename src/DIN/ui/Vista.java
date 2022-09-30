@@ -8,7 +8,8 @@ package DIN.ui;
 /**
  *
  * @author Ale
+ * Aquí en la interfaz de vista, recogemos el metodo showGreeting, que muestra el mensaje por la ventana
  */
 public interface Vista {
-    
+    public void showGreeting(String mensaje);
 }

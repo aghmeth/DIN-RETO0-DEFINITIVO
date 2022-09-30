@@ -13,13 +13,7 @@ import java.io.FileOutputStream;
  * @author Ale
  */
 public class fichero implements Serializable{
-    File fich = new File("fich.txt");
+
     
-    try {
-        FileOutputStream fos = new FileOutputStream(fich);
-        
-    }catch (FileNotFoundException ex) {
-    
-    }
 }
 
