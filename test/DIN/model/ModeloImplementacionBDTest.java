@@ -26,7 +26,7 @@ public class ModeloImplementacionBDTest {
         ModeloImplementacionBD instance = new ModeloImplementacionBD();
         instance.openConnection();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -38,7 +38,7 @@ public class ModeloImplementacionBDTest {
         ModeloImplementacionBD instance = new ModeloImplementacionBD();
         instance.closeConnection();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
@@ -48,11 +48,11 @@ public class ModeloImplementacionBDTest {
     public void testGetGreeting() {
         System.out.println("getGreeting");
         ModeloImplementacionBD instance = new ModeloImplementacionBD();
-        String expResult = "";
+        String expResult = "hola desde la BD";
         String result = instance.getGreeting();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }

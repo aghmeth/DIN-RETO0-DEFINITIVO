@@ -24,7 +24,7 @@ public class ModeloImplementacionFichTest {
     public void testGetGreeting() {
         System.out.println("getGreeting");
         ModeloImplementacionFich instance = new ModeloImplementacionFich();
-        String expResult = "";
+        String expResult = "HOLA!!!";
         String result = instance.getGreeting();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

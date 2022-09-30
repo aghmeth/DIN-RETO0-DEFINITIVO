@@ -22,13 +22,12 @@ public class ModelFactoryTest {
      */
     @Test
     public void testGetModel() {
-        System.out.println("getModel");
         ModelFactory instance = new ModelFactory();
         Modelo expResult = null;
         Modelo result = instance.getModel();
-        assertEquals(expResult, result);
+        assertNotEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
