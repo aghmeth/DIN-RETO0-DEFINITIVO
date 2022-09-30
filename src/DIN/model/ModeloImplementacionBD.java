@@ -22,6 +22,7 @@ import java.util.logging.Logger;
 /**
  *
  * @author iorit
+ * Aquí conectamos con la base de datos y recogemos el mensaje
  */
 public class ModeloImplementacionBD implements Modelo{
     private Connection conex;
